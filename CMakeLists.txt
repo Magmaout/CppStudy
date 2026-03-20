@@ -12,6 +12,10 @@ endif()
 
 set(CMAKE_CXX_STANDARD 20)
 
+add_executable(Fraction ${COMMON_SOURCES}
+	"src/utils/Fraction.cpp"
+)
+
 add_executable(Animals ${COMMON_SOURCES}
 	"src/animals/Main.cpp"
 	"src/animals/Animal.cpp"
