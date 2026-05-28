@@ -12,16 +12,24 @@ endif()
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Fraction ${COMMON_SOURCES}
-	"src/utils/Fraction.cpp"
-)
-
 add_executable(Animals ${COMMON_SOURCES}
 	"src/animals/Main.cpp"
 	"src/animals/Animal.cpp"
 	"src/animals/Cat.cpp"
 	"src/animals/Bird.cpp"
 	"src/animals/Meowl.cpp"
+)
+
+add_executable(Fraction ${COMMON_SOURCES}
+	"src/utils/Fraction.cpp"
+)
+
+add_executable(Employee ${COMMON_SOURCES}
+	"src/employee/headers/EmployeeCommissionSalary.hpp"
+	"src/employee/headers/EmployeeSalary.hpp"
+	"src/employee/EmployeeCommissionSalary.cpp"
+	"src/employee/EmployeeSalary.cpp"
+	"src/employee/Main.cpp"
 )
 
 #if (CMAKE_VERSION VERSION_GREATER 3.12)
